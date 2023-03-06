@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Library</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header class="container">
+            <h1>Library</h1>
+        </header>
+        <main>
+            <section class="container">
+                <ul class="book-list">
+                    <li class="book__item">
+                        <div class="book__info">
+                            <h3>"Lord of the Rings"</h3>
+                            <p>1974</p>
+                            <p>J.R.R. Tolkien</p>
+                        </div>
+                        <div class="btns">
+                            <button class="btn btn--in-progress">
+                                In progress
+                            </button>
+                            <button class="btn btn--finished">Finished</button>
+                            <button class="btn btn--favourite">
+                                Favourite
+                            </button>
+                            <button class="btn btn--delete">Delete</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="container">
+                <form class="book-add">
+                    <input type="text" class="add__title" />
+                    <input type="text" class="add__year" />
+                    <input type="text" class="add__author" />
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

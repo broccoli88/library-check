@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;700&display=swap");
+
+/* font-family: 'Cormorant Unicase', serif; */
+
+:root {
+    --color-light-green: #606c38;
+    --color-green: #283618;
+    --color-creme: #fefae0;
+    --color-light-brown: #dda15e;
+    --color-brown: #bc6c25;
+    --color-btn-del: #c31e0c;
+    --color-btn-in-progress: #e39505;
+    --color-btn-finished: #1d9016;
+    --color-btn-favourite: #aa18b5;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+
+    color: var(--color-green);
+
+    background-color: var(--color-creme);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    color: var(--color-light-green);
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: clamp(4rem, 1rem + 5vw, 6rem);
+}
+
+h2 {
+    font-size: clamp(2.6rem, 4.3vw, 3.3rem);
+}
+
+h3 {
+    font-size: clamp(1.9rem, 3.1vw, 2.4rem);
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+/* Buttons */
+
+.btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    padding: 0.6rem 1.7rem;
+    /* margin-right: 2rem; */
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1.3rem;
+
+    transition: 0.3s all;
+}
+
+.btn--delete {
+    border-color: var(--color-btn-del);
+    color: var(--color-btn-del);
+}
+
+.btn--delete:hover {
+    background-color: var(--color-brown);
+    color: var(--color-creme);
+}
+
+.btn--in-progress {
+    border-color: var(--color-btn-in-progress);
+    color: var(--color-btn-in-progress);
+}
+
+.btn--in-progress:hover {
+    background-color: var(--color-btn-in-progress);
+    color: var(--color-creme);
+}
+
+.btn--finished {
+    border-color: var(--color-btn-finished);
+    color: var(--color-btn-finished);
+}
+
+.btn--finished:hover {
+    background-color: var(--color-btn-finished);
+    color: var(--color-creme);
+}
+
+.btn--favourite {
+    border-color: var(--color-btn-favourite);
+    color: var(--color-btn-favourite);
+}
+
+.btn--favourite:hover {
+    background-color: var(--color-btn-favourite);
+    color: var(--color-creme);
+}
+/* Book List */
+
+.book-list {
+    list-style-type: none;
+}
+
+.book__item {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+
+    border-top: 1px solid var(--color-light-brown);
+    border-bottom: 1px solid var(--color-light-brown);
+}
+
+.book__info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Add book - inputs */
